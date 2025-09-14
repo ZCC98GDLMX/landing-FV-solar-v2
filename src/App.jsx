@@ -8,8 +8,8 @@ import React, { useMemo, useState } from "react";
 
 const CONTACTO = {
   negocio: "Broker Energético",
-  telefono: "+523315462824", // Formato internacional para WhatsApp
-  telefonoBonito: "33 1546 2824",
+  telefono: "+523343344034", // Formato internacional para WhatsApp
+  telefonoBonito: "33 4334 4034",
   email: "cristhianzepeda18@gmail.com",
   politicaPrivacidadURL: "https://www.freeprivacypolicy.com/live/a35c2f00-185c-4901-9b03-030901a865d8", // reemplaza por tu URL real
   cobertura: "Zona Metropolitana y Alrededores de Jalisco",
@@ -329,7 +329,7 @@ export default function SolarLanding() {
           {[
             { t: "Diagnóstico", d: "Levantamiento y consumo actual." },
             { t: "Diseño", d: "Propuesta técnica/económica a medida." },
-            { t: "Instalación", d: "1–3 días con pruebas y puesta en marcha." },
+            { t: "Instalación", d: "2–5 días con pruebas y puesta en marcha (sujeto a tamaño de instalación)." },
             { t: "Monitoreo", d: "Seguimiento y garantía de desempeño." },
           ].map((p, i) => (
             <li key={p.t} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
