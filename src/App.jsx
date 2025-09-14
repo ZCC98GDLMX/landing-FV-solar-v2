@@ -156,7 +156,7 @@ export default function SolarLanding() {
             </div>
           </div>
           <div className="relative">
-            <div className="aspect-[4/3] w-full rounded-2xl bg-[url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1200&auto=format&fit=crop')] bg-cover bg-center shadow-xl ring-1 ring-slate-200"></div>
+            <div className="aspect-[4/3] w-full rounded-2xl bg-[url('/hero-solar.png')] bg-cover bg-center shadow-xl ring-1 ring-slate-200"></div>
             <div className="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-lg p-4 border border-slate-200">
               <p className="text-sm text-slate-500">Clientes satisfechos</p>
               <p className="text-2xl font-bold">+350</p>
