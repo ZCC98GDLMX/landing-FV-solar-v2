@@ -7,30 +7,30 @@ import React, { useMemo, useState } from "react";
 // 🔧 Personaliza las constantes de CONTACTO más abajo.
 
 const CONTACTO = {
-  negocio: "Energía Solar GDL",
-  telefono: "+523312345678", // Formato internacional para WhatsApp
-  telefonoBonito: "33 1234 5678",
-  email: "ventas@energiasolargdl.mx",
-  politicaPrivacidadURL: "https://tu-dominio.com/aviso-de-privacidad", // reemplaza por tu URL real
-  cobertura: "Guadalajara, Zapopan y alrededores",
+  negocio: "Broker Energético",
+  telefono: "+523315462824", // Formato internacional para WhatsApp
+  telefonoBonito: "33 1546 2824",
+  email: "cristhianzepeda18@gmail.com",
+  politicaPrivacidadURL: "https://www.freeprivacypolicy.com/live/a35c2f00-185c-4901-9b03-030901a865d8", // reemplaza por tu URL real
+  cobertura: "Zona Metropolitana y Alrededores de Jalisco",
 };
 
 const beneficios = [
   { title: "Ahorro en tu recibo", desc: "Reduce hasta 95% tu pago de luz dependiendo de tu consumo y techo disponible.", icon: "💸" },
-  { title: "Garantía larga", desc: "Paneles con garantía de potencia hasta 25 años y equipos certificados.", icon: "🛡️" },
+  { title: "Garantía en equipos e instalaciónn", desc: "Paneles con garantía de potencia hasta 25 años y equipos certificados.", icon: "🛡️" },
   { title: "Instalación profesional", desc: "Equipo técnico con experiencia residencial y comercial.", icon: "🛠️" },
-  { title: "Financiamiento", desc: "Opciones para pagar a plazos y deducibilidad para empresas.", icon: "🏦" },
+  { title: "Facilidades de pago", desc: "Opciones para pagar a plazos y deducibilidad para empresas.", icon: "🏦" },
 ];
 
 const servicios = [
   {
     title: "Paneles Solares (FV)",
     desc: "Sistemas fotovoltaicos residenciales y comerciales a la medida.",
-    bullets: ["Levantamiento y diseño", "Instalación en 1–3 días", "Monitoreo y garantía"],
+    bullets: ["Levantamiento y diseño", "Instalación en 2-5 días", "Monitoreo y garantía"],
   },
   {
     title: "Calentadores Solares",
-    desc: "Ahorra gas con termosifón o presurizado según tus hábitos.",
+    desc: "Ahorra gas con termosifón o presurizado.",
     bullets: ["Cálculo de capacidad", "Instalación segura", "Mantenimiento y refacciones"],
   },
   {
@@ -43,11 +43,11 @@ const servicios = [
 const faqs = [
   {
     q: "¿En cuánto tiempo recupero la inversión?",
-    a: "Usualmente entre 2 y 5 años según tu consumo y tarifa. La calculadora te da una referencia rápida.",
+    a: "Usualmente entre 2 y 5 años según tu consumo y tarifa. La calculadora te da una estimación, solo para terminos de consulta rápida.",
   },
   {
     q: "¿Trabajan en toda el área metropolitana?",
-    a: `Sí, cubrimos ${CONTACTO.cobertura}.`,
+    a: `Sí, cubrimos toda la zona metropolitana y alrededores ${CONTACTO.cobertura}.`,
   },
   {
     q: "¿Puedo deducir impuestos?",
