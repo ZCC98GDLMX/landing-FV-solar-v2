@@ -24,13 +24,13 @@ const beneficios = [
 
 const servicios = [
   {
-    title: "Paneles Solares (FV)",
+    title: "Paneles Solares",
     desc: "Sistemas fotovoltaicos residenciales y comerciales a la medida.",
     bullets: ["Levantamiento y diseño", "Instalación en 2-5 días", "Monitoreo y garantía"],
   },
   {
     title: "Calentadores Solares",
-    desc: "Ahorra gas con termosifón o presurizado.",
+    desc: "Ahorra gas con equipos de gravedad o presurizado.",
     bullets: ["Cálculo de capacidad", "Instalación segura", "Mantenimiento y refacciones"],
   },
   {
@@ -43,11 +43,11 @@ const servicios = [
 const faqs = [
   {
     q: "¿En cuánto tiempo recupero la inversión?",
-    a: "Usualmente entre 2 y 5 años según tu consumo y tarifa. La calculadora te da una estimación, solo para terminos de consulta rápida.",
+    a: "Usualmente entre 2 y 5 años según tu consumo y tarifa. La calculadora es solo una estimación, solo para fines de consulta rápida.",
   },
   {
     q: "¿Trabajan en toda el área metropolitana?",
-    a: `Sí, cubrimos toda la zona metropolitana y alrededores ${CONTACTO.cobertura}.`,
+    a: `${CONTACTO.cobertura}.`,
   },
   {
     q: "¿Puedo deducir impuestos?",
