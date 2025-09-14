@@ -1,4 +1,3 @@
-\
 import React, { useMemo, useState } from "react";
 
 // ⚡ Landing page para negocio de energía solar en Guadalajara
