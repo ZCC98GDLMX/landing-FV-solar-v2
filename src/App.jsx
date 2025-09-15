@@ -11,7 +11,7 @@ const CONTACTO = {
   telefono: "+523343344034", // Formato internacional para WhatsApp
   telefonoBonito: "33 4334 4034",
   email: "cristhianzepeda18@gmail.com",
-  politicaPrivacidadURL: "https://www.freeprivacypolicy.com/live/a35c2f00-185c-4901-9b03-030901a865d8", // reemplaza por tu URL real
+  politicaPrivacidadURL: "https://www.freeprivacypolicy.com/live/5efe0718-41c5-4ab4-babc-eba396241944", // reemplaza por tu URL real
   cobertura: "Zona Metropolitana y Alrededores de Jalisco",
 };
 
