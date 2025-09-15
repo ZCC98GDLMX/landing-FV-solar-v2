@@ -7,7 +7,7 @@ import React, { useMemo, useState } from "react";
 // 🔧 Personaliza las constantes de CONTACTO más abajo.
 
 const CONTACTO = {
-  negocio: "Broker Energético",
+  negocio: "Aura Solar",
   telefono: "+523343344034", // Formato internacional para WhatsApp
   telefonoBonito: "33 4334 4034",
   email: "cristhianzepeda18@gmail.com",
