@@ -77,7 +77,7 @@ export default function SolarLanding() {
   // - Relación MXN→kWh estimada por tarifa doméstica (ajústalo según tu experiencia).
   // - Ahorro del 90% con FV bien dimensionado.
   const calc = useMemo(() => {
-    const precioKWh = 2.4; // MXN/kWh (referencial), ajusta a tu realidad local
+    const precioKWh = 6.0; // MXN/kWh (referencial), ajusta a tu realidad local
     const kWhMes = Math.max(1, consumoMXN / precioKWh);
     // tamaño de sistema (kWp) ≈ kWhMes / (producción mensual por kWp ~ 140 kWh/kWp en GDL)
     const kWhPorkWpMes = 130; // aproximado para GDL
