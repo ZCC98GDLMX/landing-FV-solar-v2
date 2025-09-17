@@ -10,32 +10,32 @@ const CONTACTO = {
   negocio: "Aura Solar",
   telefono: "+523343344034", // Formato internacional para WhatsApp
   telefonoBonito: "33 4334 4034",
-  email: "cristhianzepeda18@gmail.com",
-  politicaPrivacidadURL: "https://www.freeprivacypolicy.com/live/5efe0718-41c5-4ab4-babc-eba396241944", // reemplaza por tu URL real
+  email: "contacto@aurasolar.mx",
+  politicaPrivacidadURL: "https://www.freeprivacypolicy.com/live/2b5f67a6-ccdc-4ee8-aeea-da5fa52b78b9", // reemplaza por tu URL real
   cobertura: "Zona Metropolitana y Alrededores de Jalisco",
 };
 
 const beneficios = [
-  { title: "Ahorro en tu recibo", desc: "Reduce hasta 95% tu pago de luz dependiendo de tu consumo y techo disponible.", icon: "💸" },
-  { title: "Garantía en equipos e instalaciónn", desc: "Paneles con garantía de potencia hasta 25 años y equipos certificados.", icon: "🛡️" },
+  { title: "Ahorro en tu recibo CFE", desc: "Reduce hasta 90% tu pago de luz dependiendo de tu consumo.", icon: "💸" },
+  { title: "Garantía en equipos e instalación", desc: "Paneles con garantía de potencia hasta 25 años y equipos certificados.", icon: "🛡️" },
   { title: "Instalación profesional", desc: "Equipo técnico con experiencia residencial y comercial.", icon: "🛠️" },
-  { title: "Facilidades de pago", desc: "Opciones para pagar a plazos y deducibilidad para empresas.", icon: "🏦" },
+  { title: "Facilidades de pago", desc: "Facilidades de pago y deducibilidad para empresas.", icon: "🏦" },
 ];
 
 const servicios = [
   {
     title: "Paneles Solares",
     desc: "Sistemas fotovoltaicos residenciales y comerciales a la medida.",
-    bullets: ["Levantamiento y diseño", "Instalación en 2-5 días", "Monitoreo y garantía"],
+    bullets: ["Levantamiento y diseño", "Instalación segura y conforme a normativa vigente", "Monitoreo y garantía en módulos, inversor y mano de obra"],
   },
   {
     title: "Calentadores Solares",
-    desc: "Ahorra gas con equipos de gravedad o presurizado.",
-    bullets: ["Cálculo de capacidad", "Instalación segura", "Mantenimiento y refacciones"],
+    desc: "Ahorra gas con equipos de gravedad o presurizado de uso residencial y comercial.",
+    bullets: ["Dimensionamiento", "Instalación segura", "Mantenimiento y refacciones"],
   },
   {
     title: "Mantenimiento",
-    desc: "Limpieza, revisión eléctrica/hidráulica, cambio de componentes.",
+    desc: "Limpieza, revisión eléctrica/hidráulica, reemplazo de componentes.",
     bullets: ["Limpieza profesional", "Pruebas eléctricas", "Garantía de servicio"],
   },
 ];
@@ -77,10 +77,10 @@ export default function SolarLanding() {
   // - Relación MXN→kWh estimada por tarifa doméstica (ajústalo según tu experiencia).
   // - Ahorro del 90% con FV bien dimensionado.
   const calc = useMemo(() => {
-    const precioKWh = 2.8; // MXN/kWh (referencial), ajusta a tu realidad local
+    const precioKWh = 2.4; // MXN/kWh (referencial), ajusta a tu realidad local
     const kWhMes = Math.max(1, consumoMXN / precioKWh);
     // tamaño de sistema (kWp) ≈ kWhMes / (producción mensual por kWp ~ 140 kWh/kWp en GDL)
-    const kWhPorkWpMes = 140; // aproximado para GDL
+    const kWhPorkWpMes = 130; // aproximado para GDL
     const sistemaKwp = +(kWhMes / kWhPorkWpMes).toFixed(2);
     const ahorroMensual = +(consumoMXN * 0.9).toFixed(0);
     const costoSistemaMXN = Math.max(20000, Math.round(sistemaKwp * 25000)); // sup. 25k por kWp
@@ -310,8 +310,8 @@ export default function SolarLanding() {
           <div className="mt-8 grid md:grid-cols-3 gap-6">
             {[
               { n: "María G.", t: "Casa en Zapopan", m: "Bajó nuestro recibo de $2,400 a menos de $200. Instalación impecable." },
-              { n: "Taller López", t: "Comercio en GDL", m: "La inversión se paga sola. Excelente seguimiento y monitoreo." },
-              { n: "Hotel Centro", t: "Calentadores", m: "Agua caliente constante y ahorro importante en gas." },
+              { n: "Taller López", t: "Comercio en GDL", m: "La inversión se paga sola. Excelente seguimiento y monitoreo del sistema." },
+              { n: "Eduardo Hernández", t: "Casa en Tlajomulco", m: "Agua caliente constante y ahorro importante en gas, muchas gracias." },
             ].map((c, i) => (
               <div key={i} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
                 <p className="text-slate-700">“{c.m}”</p>
@@ -329,8 +329,8 @@ export default function SolarLanding() {
           {[
             { t: "Diagnóstico", d: "Levantamiento y consumo actual." },
             { t: "Diseño", d: "Propuesta técnica/económica a medida." },
-            { t: "Instalación", d: "2–5 días con pruebas y puesta en marcha (sujeto a tamaño de instalación)." },
-            { t: "Monitoreo", d: "Seguimiento y garantía de desempeño." },
+            { t: "Instalación", d: "1-2 semanas con pruebas y puesta en marcha (sujeto a tamaño de instalación)." },
+            { t: "Monitoreo", d: "Seguimiento del desempeño de la instalación fotovoltaica." },
           ].map((p, i) => (
             <li key={p.t} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
               <div className="text-3xl font-extrabold text-emerald-600">{i + 1}</div>
@@ -360,7 +360,7 @@ export default function SolarLanding() {
       <section className="mx-auto max-w-6xl px-4 py-16">
         <div className="rounded-2xl bg-emerald-600 text-white p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold">¿Listo para empezar a ahorrar?</h2>
+            <h2 className="text-2xl md:text-3xl font-bold">¿Listo para empezar a ahorrar con Aura Solar?</h2>
             <p className="text-emerald-50 mt-2">Agenda tu diagnóstico sin costo hoy mismo.</p>
           </div>
           <div className="flex gap-3">
