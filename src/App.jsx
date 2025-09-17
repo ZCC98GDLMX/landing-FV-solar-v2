@@ -83,7 +83,7 @@ export default function SolarLanding() {
     const kWhPorkWpMes = 130; // aproximado para GDL
     const sistemaKwp = +(kWhMes / kWhPorkWpMes).toFixed(2);
     const ahorroMensual = +(consumoMXN * 0.9).toFixed(0);
-    const costoSistemaMXN = Math.max(20000, Math.round(sistemaKwp * 25000)); // sup. 25k por kWp
+    const costoSistemaMXN = Math.max(20000, Math.round(sistemaKwp * 20000)); // sup. 25k por kWp
     const paybackMeses = Math.max(6, Math.round(costoSistemaMXN / Math.max(1, ahorroMensual)));
     return { kWhMes, sistemaKwp, ahorroMensual, costoSistemaMXN, paybackMeses };
   }, [consumoMXN]);
