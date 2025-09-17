@@ -26,12 +26,12 @@ const servicios = [
   {
     title: "Paneles Solares",
     desc: "Sistemas fotovoltaicos residenciales y comerciales a la medida.",
-    bullets: ["Levantamiento y diseño", "Instalación segura y conforme a normativa vigente", "Monitoreo y garantía en módulos, inversor y mano de obra"],
+    bullets: ["Levantamiento y diseño", "Instalación profesional y conforme a normativa vigente", "Monitoreo y garantía en módulos, inversor y mano de obra"],
   },
   {
     title: "Calentadores Solares",
     desc: "Ahorra gas con equipos de gravedad o presurizado de uso residencial y comercial.",
-    bullets: ["Dimensionamiento", "Instalación segura", "Mantenimiento y refacciones"],
+    bullets: ["Dimensionamiento", "Instalación profesional", "Mantenimiento y refacciones"],
   },
   {
     title: "Mantenimiento",
