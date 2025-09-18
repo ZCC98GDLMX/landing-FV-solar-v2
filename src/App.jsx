@@ -1,4 +1,6 @@
 import React, { useMemo, useState } from "react";
+import LogoCompleto from "./assets/logo-completo.png";
+
 
 // ⚡ Landing page para negocio de energía solar en Guadalajara
 // - Un solo archivo React (TailwindCSS por CDN en index.html)
@@ -112,11 +114,12 @@ export default function SolarLanding() {
         <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
          <div className="flex items-center">
   <img 
-    src="/logo-completo.png" 
-    alt="Aura Solar" 
+    src={LogoCompleto}
+    alt="Aura Solar"
     className="h-12 object-contain"
   />
 </div>
+
 
           <nav className="hidden md:flex gap-6 text-sm">
             <a href="#servicios" className="hover:text-slate-900">Servicios</a>
