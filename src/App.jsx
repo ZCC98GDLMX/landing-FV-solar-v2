@@ -130,7 +130,7 @@ export default function SolarLanding() {
           </nav>
           <a
             href={whatsappLink("Hola, deseo una cotización de energía solar.")}
-            className="rounded-xl px-4 py-2 bg-emerald-600 text-white text-sm font-medium shadow hover:bg-emerald-700"
+className="rounded-xl px-4 py-2 bg-yellow-500 text-black text-sm font-medium shadow hover:bg-yellow-600"
           >WhatsApp</a>
         </div>
       </header>
@@ -140,7 +140,7 @@ export default function SolarLanding() {
         <div className="mx-auto max-w-6xl px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
           <div>
             <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
-              Ahorra hasta <span className="text-emerald-600">95%</span> en tu recibo de luz
+              Ahorra hasta <span className="text-yellow-600">95%</span> en tu recibo de luz
             </h1>
             <p className="mt-4 text-lg text-slate-600">
               Instalamos <strong>paneles solares</strong> y <strong>calentadores solares</strong> en {CONTACTO.cobertura}. 
@@ -149,7 +149,7 @@ export default function SolarLanding() {
             <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href="#contacto"
-                className="rounded-xl px-5 py-3 bg-emerald-600 text-white font-semibold shadow hover:bg-emerald-700"
+                className="rounded-xl px-5 py-3 bg-yellow-500 text-white font-semibold shadow hover:bg-yellow-600"
               >Solicitar cotización</a>
               <a
                 href="#calculadora"
@@ -249,7 +249,7 @@ export default function SolarLanding() {
                 href={whatsappLink(
                   `Hola, quiero una cotización. Pago ~$${consumoMXN}/mes, sistema estimado ${calc.sistemaKwp} kWp.`
                 )}
-                className="mt-6 inline-flex rounded-xl px-5 py-3 bg-emerald-600 text-white font-semibold shadow hover:bg-emerald-700"
+                className="mt-6 inline-flex rounded-xl px-5 py-3 bg-yellow-500 text-white font-semibold shadow hover:bg-yellow-600"
               >Quiero una cotización por WhatsApp</a>
             </div>
           </div>
@@ -263,26 +263,26 @@ export default function SolarLanding() {
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="text-sm text-slate-600">Nombre</label>
-                  <input value={nombre} onChange={(e) => setNombre(e.target.value)} required className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-emerald-500" />
+                  <input value={nombre} onChange={(e) => setNombre(e.target.value)} required className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-yellow-500" />
                 </div>
                 <div>
                   <label className="text-sm text-slate-600">Email</label>
-                  <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-emerald-500" />
+                  <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-yellow-500" />
                 </div>
                 <div>
                   <label className="text-sm text-slate-600">Teléfono</label>
-                  <input value={telefono} onChange={(e) => setTelefono(e.target.value)} required className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-emerald-500" />
+                  <input value={telefono} onChange={(e) => setTelefono(e.target.value)} required className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-yellow-500" />
                 </div>
                 <div>
                   <label className="text-sm text-slate-600">Colonia</label>
-                  <input value={colonia} onChange={(e) => setColonia(e.target.value)} className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-emerald-500" />
+                  <input value={colonia} onChange={(e) => setColonia(e.target.value)} className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-yellow-500" />
                 </div>
               </div>
 
               <div className="grid md:grid-cols-2 gap-4 items-end">
                 <div>
                   <label className="text-sm text-slate-600">Tipo de inmueble</label>
-                  <select value={tipoInmueble} onChange={(e) => setTipoInmueble(e.target.value)} className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-emerald-500">
+                  <select value={tipoInmueble} onChange={(e) => setTipoInmueble(e.target.value)} className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-yellow-500">
                     <option>Casa</option>
                     <option>Negocio</option>
                     <option>Industria</option>
@@ -290,11 +290,11 @@ export default function SolarLanding() {
                 </div>
                 <div>
                   <label className="text-sm text-slate-600">Gasto de luz (MXN/mes)</label>
-                  <input type="number" min={100} step={50} value={consumoMXN} onChange={(e) => setConsumoMXN(parseInt(e.target.value || "0"))} className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-emerald-500" />
+                  <input type="number" min={100} step={50} value={consumoMXN} onChange={(e) => setConsumoMXN(parseInt(e.target.value || "0"))} className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-yellow-500" />
                 </div>
               </div>
 
-              <button type="submit" className="w-full rounded-xl px-5 py-3 bg-emerald-600 text-white font-semibold shadow hover:bg-emerald-700">
+              <button type="submit" className="w-full rounded-xl px-5 py-3 bg-yellow-500 text-white font-semibold shadow hover:bg-yellow-700">
                 Solicitar cotización
               </button>
 
@@ -341,7 +341,7 @@ export default function SolarLanding() {
             { t: "Monitoreo", d: "Seguimiento del desempeño de la instalación fotovoltaica." },
           ].map((p, i) => (
             <li key={p.t} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <div className="text-3xl font-extrabold text-emerald-600">{i + 1}</div>
+              <div className="text-3xl font-extrabold text-yellow-600">{i + 1}</div>
               <h3 className="mt-2 font-semibold">{p.t}</h3>
               <p className="text-slate-600 text-sm">{p.d}</p>
             </li>
@@ -366,14 +366,14 @@ export default function SolarLanding() {
 
       {/* CTA FINAL */}
       <section className="mx-auto max-w-6xl px-4 py-16">
-        <div className="rounded-2xl bg-emerald-600 text-white p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="rounded-2xl bg-yellow-600 text-white p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <h2 className="text-2xl md:text-3xl font-bold">¿Listo para empezar a ahorrar con Aura Solar?</h2>
-            <p className="text-emerald-50 mt-2">Agenda tu diagnóstico sin costo hoy mismo.</p>
+            <p className="text-yellow-50 mt-2">Agenda tu diagnóstico sin costo hoy mismo.</p>
           </div>
           <div className="flex gap-3">
-            <a href="#contacto" className="rounded-xl px-5 py-3 bg-white text-emerald-700 font-semibold shadow">Solicitar cotización</a>
-            <a href={whatsappLink("Hola, quiero agendar un diagnóstico sin costo.")} className="rounded-xl px-5 py-3 bg-emerald-700 text-white font-semibold shadow hover:bg-emerald-800">WhatsApp</a>
+            <a href="#contacto" className="rounded-xl px-5 py-3 bg-white text-yellow-700 font-semibold shadow">Solicitar cotización</a>
+            <a href={whatsappLink("Hola, quiero agendar un diagnóstico sin costo.")} className="rounded-xl px-5 py-3 bg-yellow-700 text-white font-semibold shadow hover:bg-yellow-800">WhatsApp</a>
           </div>
         </div>
       </section>
