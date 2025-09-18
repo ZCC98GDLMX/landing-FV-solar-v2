@@ -116,7 +116,7 @@ export default function SolarLanding() {
   <img 
     src={LogoCompleto}
     alt="Aura Solar"
-    className="h-36 object-contain"
+    className="h-30 object-contain"
   />
 </div>
 
