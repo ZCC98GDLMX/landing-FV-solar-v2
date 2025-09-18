@@ -110,13 +110,14 @@ export default function SolarLanding() {
       {/* NAV */}
       <header className="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-slate-200">
         <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-          <div className="flex items-center">
+         <div className="flex items-center">
   <img 
-    src="/logo-aurasolar.png" 
+    src="/logo-completo.png" 
     alt="Aura Solar" 
     className="h-12 object-contain"
   />
 </div>
+
           <nav className="hidden md:flex gap-6 text-sm">
             <a href="#servicios" className="hover:text-slate-900">Servicios</a>
             <a href="#beneficios" className="hover:text-slate-900">Beneficios</a>
