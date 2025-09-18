@@ -129,9 +129,11 @@ export default function SolarLanding() {
             <a href="#contacto" className="hover:text-slate-900">Contacto</a>
           </nav>
           <a
-            href={whatsappLink("Hola, deseo una cotización de energía solar.")}
-className="rounded-xl px-4 py-2 bg-emerald-500 text-black text-sm font-medium shadow hover:bg-emerald-600"
-          >WhatsApp</a>
+  href={whatsappLink("Hola, deseo una cotización de energía solar.")}
+  className="rounded-xl px-4 py-2 bg-[#25D366] text-white text-sm font-medium shadow hover:bg-[#20bd5a] transition-colors"
+>
+  WhatsApp
+</a>
         </div>
       </header>
 
