@@ -208,7 +208,8 @@ export default function SolarLanding() {
         <div className="grid lg:grid-cols-2 gap-10 items-start">
           <div>
             <h2 className="text-2xl md:text-3xl font-bold">Calcula tu ahorro</h2>
-            <p className="mt-2 text-slate-600">Ingresa tu gasto mensual de luz para estimar tamaño de sistema y tiempo de recuperación.</p>
+            <p className="mt-2 text-slate-600">Ingresa tu gasto mensual de luz para estimar tamaño de sistema y tiempo de recuperación
+              (La calculadora es solo una estimación, solo para fines de consulta rápida).</p>
             <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
               <label className="text-sm text-slate-600">Gasto mensual (MXN)</label>
               <input
