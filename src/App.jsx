@@ -373,7 +373,7 @@ className="rounded-xl px-4 py-2 bg-emerald-500 text-black text-sm font-medium sh
           </div>
           <div className="flex gap-3">
             <a href="#contacto" className="rounded-xl px-5 py-3 bg-white text-yellow-700 font-semibold shadow">Solicitar cotización</a>
-            <a href={whatsappLink("Hola, quiero agendar un diagnóstico sin costo.")} className="rounded-xl px-5 py-3 bg-yellow-700 text-white font-semibold shadow hover:bg-emerald-200">WhatsApp</a>
+            <a href={whatsappLink("Hola, quiero agendar un diagnóstico sin costo.")} className="rounded-xl px-5 py-3 bg-yellow-700 text-white font-semibold shadow hover:bg-white-200">WhatsApp</a>
           </div>
         </div>
       </section>
