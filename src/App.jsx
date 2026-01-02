@@ -370,7 +370,7 @@ export default function SolarLanding() {
       <section className="mx-auto max-w-6xl px-4 py-16">
         <div className="rounded-2xl bg-yellow-500 text-white p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold">¿Listo para empezar a ahorrar con Aura Solar?</h2>
+            <h2 className="text-2xl md:text-3xl font-bold">¿Listo para empezar a ahorrar con Legion Solar?</h2>
             <p className="text-white-50 mt-2">Agenda tu diagnóstico sin costo hoy mismo.</p>
           </div>
           <div className="flex gap-3">
