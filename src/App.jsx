@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import LogoCompleto from "./assets/logo-completo.png";
+import LogoCompleto from "./assets/logo-completo.jpg";
 
 
 // ⚡ Landing page para negocio de energía solar en Guadalajara
