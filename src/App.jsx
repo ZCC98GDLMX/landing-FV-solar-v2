@@ -9,10 +9,10 @@ import LogoCompleto from "./assets/logo-completo.png";
 // 🔧 Personaliza las constantes de CONTACTO más abajo.
 
 const CONTACTO = {
-  negocio: "Aura Solar",
+  negocio: "Legion Solar",
   telefono: "+523343344034", // Formato internacional para WhatsApp
   telefonoBonito: "33 4334 4034",
-  email: "contacto@aurasolar.mx",
+  email: "contacto@legionsolar.mx",
   politicaPrivacidadURL: "https://www.freeprivacypolicy.com/live/2b5f67a6-ccdc-4ee8-aeea-da5fa52b78b9", // reemplaza por tu URL real
   cobertura: "Zona Metropolitana y Alrededores de Jalisco",
 };
@@ -85,7 +85,7 @@ export default function SolarLanding() {
     const kWhPorkWpMes = 130; // aproximado para GDL
     const sistemaKwp = +(kWhMes / kWhPorkWpMes).toFixed(2);
     const ahorroMensual = +(consumoMXN * 0.9).toFixed(0);
-    const costoSistemaMXN = Math.max(20000, Math.round(sistemaKwp * 20000)); // sup. 25k por kWp
+    const costoSistemaMXN = Math.max(20000, Math.round(sistemaKwp * 22000)); // sup. 25k por kWp
     const paybackMeses = Math.max(6, Math.round(costoSistemaMXN / Math.max(1, ahorroMensual)));
     return { kWhMes, sistemaKwp, ahorroMensual, costoSistemaMXN, paybackMeses };
   }, [consumoMXN]);
